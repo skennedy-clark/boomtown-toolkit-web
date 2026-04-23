@@ -1,7 +1,9 @@
-baseURL = "https://boomtown-toolkit.org/"
+baseURL = "https://skennedy-clark.github.io/boomtown-toolkit-web/"
 languageCode = "en-au"
 title = "Boomtown Toolkit"
 enableRobotsTXT = true
+relativeURLs = true
+canonifyURLs = false
 
 [pagination]
   pagerSize = 10
