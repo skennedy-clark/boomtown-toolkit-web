@@ -20,15 +20,15 @@ canonifyURLs = false
 [menu]
   [[menu.main]]
     name = "Home"
-    url = "/"
+    pageRef = "/"
     weight = 10
   [[menu.main]]
     name = "About"
-    url = "/pages/about"
+    pageRef = "/pages/about"
     weight = 20
   [[menu.main]]
     name = "Registration"
-    url = "/pages/registration"
+    pageRef = "/pages/registration"
     weight = 30
 
 [markup]
