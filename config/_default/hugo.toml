@@ -24,11 +24,11 @@ canonifyURLs = false
     weight = 10
   [[menu.main]]
     name = "About"
-    url = "/pages/about/"
+    url = "/pages/about"
     weight = 20
   [[menu.main]]
     name = "Registration"
-    url = "/pages/registration/"
+    url = "/pages/registration"
     weight = 30
 
 [markup]
