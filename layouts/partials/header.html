@@ -1,7 +1,7 @@
 <header class="uq-shell uq-shell--header">
   <div class="uq-global-bar">
     <div class="container uq-global-bar__inner">
-      <a class="uq-logo" href="{{ "/" | relURL }}">{{ .Site.Params.organisationName }}</a>
+      <a class="uq-logo" href="{{ .Site.Home.RelPermalink }}">{{ .Site.Params.organisationName }}</a>
       <a class="skip-link" href="#main-content">Skip to content</a>
     </div>
   </div>
@@ -10,7 +10,7 @@
     <div class="container uq-site-bar__inner">
       <div>
         <p class="site-kicker">Research Centre</p>
-        <a class="site-title" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+        <a class="site-title" href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a>
       </div>
 
       <nav class="primary-nav" aria-label="Main navigation">
