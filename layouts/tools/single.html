@@ -1,0 +1,35 @@
+{{ define "main" }}
+<section class="page-shell page-shell--tool">
+  <div class="container">
+    {{ partial "tool-tabs.html" . }}
+
+    <div class="tool-layout">
+      {{ partial "sidebar.html" . }}
+
+      <article class="tool-main content-card">
+        <header class="page-header">
+          <p class="eyebrow">Boomtown Toolkit</p>
+          <h1>{{ .Title }}</h1>
+          {{ with .Params.intro }}<p class="intro">{{ . }}</p>{{ end }}
+        </header>
+
+        <div class="rich-content">
+          {{ .Content }}
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="page-shell page-shell--related">
+  <div class="container">
+    {{ partial "related-tools.html" . }}
+  </div>
+</section>
+
+<section class="page-shell page-shell--tool-flowchart">
+  <div class="container container--narrow">
+    {{ partial "flowchart.html" (dict "page" . "mode" "tool") }}
+  </div>
+</section>
+{{ end }}

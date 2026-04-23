@@ -1,0 +1,39 @@
+<div class="related-grid">
+  {{ with .Params.related_tools }}
+    <section class="content-card">
+      <h2>Related tools</h2>
+      <ul>
+        {{ range . }}
+          {{ $id := . }}
+          {{ range $.Site.Data.tools.tools }}
+            {{ if eq .id $id }}
+              <li><a href="{{ .url | relURL }}">{{ .title }}</a></li>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      </ul>
+    </section>
+  {{ end }}
+
+  {{ with .Params.resources }}
+    <section class="content-card">
+      <h2>Resources</h2>
+      <ul>
+        {{ range . }}
+          <li><a href="{{ .url }}">{{ .title }}</a></li>
+        {{ end }}
+      </ul>
+    </section>
+  {{ end }}
+
+  {{ with .Params.external_tools }}
+    <section class="content-card">
+      <h2>External tools</h2>
+      <ul>
+        {{ range . }}
+          <li><a href="{{ .url }}">{{ .title }}</a></li>
+        {{ end }}
+      </ul>
+    </section>
+  {{ end }}
+</div>

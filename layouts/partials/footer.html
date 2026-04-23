@@ -1,0 +1,22 @@
+<footer class="uq-shell uq-shell--footer">
+  <div class="container footer-grid">
+    <div>
+      <h2>{{ .Site.Title }}</h2>
+      <p>A static Hugo rebuild scaffold for the toolkit.</p>
+    </div>
+
+    <div>
+      <h3>Links</h3>
+      <ul class="footer-links">
+        {{ range .Site.Menus.main }}
+          <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+
+    <div>
+      <h3>Notes</h3>
+      <p>Replace this footer with the current UQ donor markup once the shell is finalised.</p>
+    </div>
+  </div>
+</footer>

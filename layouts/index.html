@@ -1,0 +1,33 @@
+{{ define "main" }}
+<section class="home-hero">
+  <div class="container home-grid">
+    <aside class="home-sidebar">
+      <div class="toolbox-icon" aria-hidden="true">🧰</div>
+      <h2>{{ .Site.Params.homeSidebarTitle }}</h2>
+      <p>{{ .Site.Params.homeSidebarBody }}</p>
+    </aside>
+
+    <div class="home-main">
+      <div class="hero-panel content-card">
+        <p class="eyebrow">{{ .Site.Params.organisationName }}</p>
+        <h1>{{ .Params.hero_title }}</h1>
+        <p>{{ .Params.hero_body }}</p>
+        {{ with .Params.hero_button_link }}
+          <p><a class="button" href="{{ . | relURL }}">{{ $.Params.hero_button_text }}</a></p>
+        {{ end }}
+      </div>
+
+      <div class="content-card">
+        <h2>{{ .Params.welcome_title }}</h2>
+        <p>{{ .Params.welcome_body }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-shell page-shell--home-flowchart">
+  <div class="container container--narrow">
+    {{ partial "flowchart.html" (dict "page" . "mode" "home") }}
+  </div>
+</section>
+{{ end }}

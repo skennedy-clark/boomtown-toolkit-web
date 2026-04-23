@@ -1,0 +1,41 @@
+tools:
+  - id: tk1
+    title: "Choosing what to measure and why"
+    short_title: "Tool 1"
+    url: "/tools/tk1/"
+    overlay_class: "tool1"
+  - id: tk2
+    title: "Understanding change in your community"
+    short_title: "Tool 2"
+    url: "/tools/tk2/"
+    overlay_class: "tool2"
+  - id: tk3
+    title: "Identifying indicators"
+    short_title: "Tool 3"
+    url: "/tools/tk3/"
+    overlay_class: "tool3"
+  - id: tk4
+    title: "Finding data sources"
+    short_title: "Tool 4"
+    url: "/tools/tk4/"
+    overlay_class: "tool4"
+  - id: tk5
+    title: "Interpreting the evidence"
+    short_title: "Tool 5"
+    url: "/tools/tk5/"
+    overlay_class: "tool5"
+  - id: tk6
+    title: "Planning action"
+    short_title: "Tool 6"
+    url: "/tools/tk6/"
+    overlay_class: "tool6"
+  - id: tk7
+    title: "Monitoring over time"
+    short_title: "Tool 7"
+    url: "/tools/tk7/"
+    overlay_class: "tool7"
+  - id: tk8
+    title: "Sharing results"
+    short_title: "Tool 8"
+    url: "/tools/tk8/"
+    overlay_class: "tool8"

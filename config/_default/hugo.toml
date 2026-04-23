@@ -1,0 +1,35 @@
+baseURL = "https://boomtown-toolkit.org/"
+languageCode = "en-au"
+title = "Boomtown Toolkit"
+enableRobotsTXT = true
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  siteTitle = "Boomtown Toolkit"
+  siteTagline = "Tools for regional communities"
+  organisationName = "The University of Queensland"
+  description = "A static rebuild of the Boomtown Toolkit."
+  homeSidebarTitle = "Toolkit"
+  homeSidebarBody = "A practical set of tools to help communities think through change, identify what matters, and work through the boomtown workflow."
+  showBreadcrumbs = true
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 10
+  [[menu.main]]
+    name = "About"
+    url = "/pages/about/"
+    weight = 20
+  [[menu.main]]
+    name = "Registration"
+    url = "/pages/registration/"
+    weight = 30
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

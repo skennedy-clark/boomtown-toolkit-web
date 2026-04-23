@@ -1,0 +1,28 @@
+backend:
+  name: github
+  repo: your-org/boomtown-toolkit-web
+  branch: main
+
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    folder: "content/pages"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "tools"
+    label: "Tools"
+    folder: "content/tools"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Menu title", name: "menu_title", widget: "string", required: false }
+      - { label: "Intro", name: "intro", widget: "text", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }

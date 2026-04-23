@@ -1,0 +1,13 @@
+{{ $current := .File.BaseFileName }}
+<nav class="tool-tabs" aria-label="Toolkit workflow">
+  <ul>
+    {{ range .Site.Data.tools.tools }}
+      <li>
+        <a href="{{ .url | relURL }}" class="{{ if eq .id $current }}is-current{{ end }}">
+          <span class="tool-tabs__short">{{ .short_title }}</span>
+          <span class="tool-tabs__long">{{ .title }}</span>
+        </a>
+      </li>
+    {{ end }}
+  </ul>
+</nav>

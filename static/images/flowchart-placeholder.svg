@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder toolkit workflow</title>
+  <desc id="desc">A placeholder graphic showing eight boxes arranged in two rows. Replace with the real workflow artwork.</desc>
+  <rect width="1200" height="700" fill="#f8f5fb"/>
+  <g fill="#ffffff" stroke="#51247a" stroke-width="4">
+    <rect x="60" y="100" width="240" height="150" rx="18"/>
+    <rect x="350" y="100" width="240" height="150" rx="18"/>
+    <rect x="640" y="100" width="240" height="150" rx="18"/>
+    <rect x="930" y="100" width="210" height="150" rx="18"/>
+    <rect x="60" y="430" width="240" height="150" rx="18"/>
+    <rect x="350" y="430" width="240" height="150" rx="18"/>
+    <rect x="640" y="430" width="240" height="150" rx="18"/>
+    <rect x="930" y="430" width="210" height="150" rx="18"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#51247a" font-size="28" font-weight="700">
+    <text x="140" y="185">Tool 1</text>
+    <text x="430" y="185">Tool 2</text>
+    <text x="720" y="185">Tool 3</text>
+    <text x="995" y="185">Tool 4</text>
+    <text x="140" y="515">Tool 5</text>
+    <text x="430" y="515">Tool 6</text>
+    <text x="720" y="515">Tool 7</text>
+    <text x="995" y="515">Tool 8</text>
+  </g>
+  <g stroke="#7c5f98" stroke-width="6" fill="none" stroke-linecap="round">
+    <path d="M300 175 H350"/>
+    <path d="M590 175 H640"/>
+    <path d="M880 175 H930"/>
+    <path d="M165 250 V430"/>
+    <path d="M455 250 V430"/>
+    <path d="M745 250 V430"/>
+    <path d="M1035 250 V430"/>
+    <path d="M300 505 H350"/>
+    <path d="M590 505 H640"/>
+    <path d="M880 505 H930"/>
+  </g>
+</svg>

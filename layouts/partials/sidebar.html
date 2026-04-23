@@ -1,0 +1,10 @@
+{{ if and .Params.sidebar .Params.sidebar.enabled }}
+<aside class="tool-sidebar" aria-label="Page sidebar">
+  {{ range .Params.sidebar.blocks }}
+    <section class="sidebar-block content-card">
+      <h2>{{ .title }}</h2>
+      <p>{{ .body }}</p>
+    </section>
+  {{ end }}
+</aside>
+{{ end }}
