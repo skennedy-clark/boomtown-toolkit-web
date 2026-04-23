@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-    <link rel="stylesheet" href="{{ "css/toolkit.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/toolkit.css" | absURL  }}">
     {{ block "head" . }}{{ end }}
   </head>
   <body class="page-{{ .Section | default "home" }}{{ with .File }} file-{{ .BaseFileName }}{{ end }}">

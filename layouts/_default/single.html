@@ -3,7 +3,7 @@
   <div class="container container--narrow">
     {{ if .Site.Params.showBreadcrumbs }}
       <nav class="breadcrumbs" aria-label="Breadcrumbs">
-        <a href="{{ "/" | relURL }}">Home</a>
+        <a href="{{ "" | relURL }}">Home</a>
         {{ if .Section }}<span>/</span><span>{{ .Section | title }}</span>{{ end }}
         <span>/</span><span aria-current="page">{{ .Title }}</span>
       </nav>

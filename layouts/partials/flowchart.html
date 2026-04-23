@@ -4,7 +4,7 @@
 <div class="flowchart-panel content-card">
   <h2>{{ if eq .mode "home" }}Toolkit workflow{{ else }}Explore the full workflow{{ end }}</h2>
   <div class="flowchart-wrapper">
-    <img class="flowchart-image" src="{{ "images/flowchart-placeholder.svg" | relURL }}" alt="Boomtown Toolkit workflow">
+    <img class="flowchart-image" src="{{ "images/flowchart-placeholder.svg" | absURL }}" alt="Boomtown Toolkit workflow">
     {{ range $page.Site.Data.tools.tools }}
       <a
         class="flowchart-link {{ .overlay_class }} {{ if eq .id $current }}is-current{{ end }}"
